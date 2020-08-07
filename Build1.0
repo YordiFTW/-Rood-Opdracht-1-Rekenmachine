@@ -1,0 +1,58 @@
+using System;
+using Microsoft.VisualBasic;
+
+namespace ConsoleApp1
+{
+	class Program
+	{
+		static void Main(string[] args)
+		{
+
+
+
+
+
+			Console.WriteLine("Welkom bij het start scherm, druk op enter om te starten.");
+
+			Console.ReadLine();
+
+			Console.Write("Vul nu het eerste cijfer in: ");
+
+			decimal num1 = Convert.ToDecimal(Console.ReadLine());
+
+			Console.Write("Vul nu de gewenste rekenfunctie in: ");
+
+			var functie1 = Console.ReadLine();
+
+			Console.Write("Vul nu het tweede cijfer in: ");
+
+			decimal num2 = Convert.ToDecimal(Console.ReadLine());
+
+
+			if(functie1 == "/")
+
+			
+				Console.Write(num1 / num2);
+
+			if (functie1 == "+")
+
+
+				Console.Write(num1 + num2);
+
+			if (functie1 == "-")
+
+
+				Console.Write(num1 - num2);
+
+			if (functie1 == "*")
+
+
+				Console.Write(num1 * num2);
+
+
+			Console.ReadLine();
+
+
+		}
+	}
+}
